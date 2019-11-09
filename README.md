@@ -1,0 +1,3 @@
+# Web Development – Javascript mini-workshop
+
+In this workshop you will get started with the basics of JavaScript. At your disposal is an HTML file [`sample_page.html`](sample_page.html) which will be the document we will be working on throughout. Take a look at the document, this is usually the minimal structure for HTML. To make use of JavaScript we should add a few visible elements to the document, opening it in a browser now only shows a blank page. 
