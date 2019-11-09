@@ -2,7 +2,7 @@
 
 In this workshop you will get started with the basics of JavaScript. At your disposal is an HTML file [`sample_page.html`](sample_page.html) which will be the document we will be working on throughout. It contains the boilerplate HTML elements, a `div` and a `p` element with some text. 
 
-#### Interactive JavaScript
+### Interactive JavaScript
 Start out by opening the document in your browser and also opening the your browser's *Developer Tools*. In most browsers this can be done by pressing `Shift` +`Ctrl` + `I` (Windows/Linux) or `Cmd` + `Shift` + `C` (Mac). If it doesn't work, check [this page](https://debugbrowser.com), it has instructions for the most common browsers. If you've done it correctly you should see something like this (this is Chrome's dev. tool, it might look a bit different on other browsers):
 
 <img src="images/dev-tools-chrome.png">
@@ -17,7 +17,7 @@ paragraph;
 ```
 You should now see that the variable *paragraph* contains our paragraph element. Congratulations, you just successfully wrote some JavaScript! But, if you reload the page and write `paragraph;` again you will see that the variable is no longer is defined.
 
-#### JavaScript in HTML
+### JavaScript in HTML
 Of course, we don't want to write the JavaScript manually every time we load a page so let's do another approach where we include the JavaScript in the HTML instead.
 
 Head over to the sample_page.html (open it in your editor/IDE) and write a `<script>` element inside the `<body>` element *at the end*. And inside the `<script>` write the code we wrote in the console before:
@@ -30,7 +30,7 @@ If you now refresh the page in the browser and write `paragraph;` in the console
 **Question I**
  What happens if we move the  `<script>` element to the beginning of the `<body>` element instead of the end? And why do you think this happens? 
 
-#### JavaScript in separate file
+### JavaScript in separate file
 The problem with writing JavaScript code inside the HTML is that it makes the document harder to read since it mixes code for structure and code for behaviour. It also makes it harder to reuse the same JavaScript code for other documents. So it is generally considered best practice to write the JavaScript in a separate file and linking to it in the HTML instead.
 
 Create a new file called `script.js` in the same folder as your HTML file. Move the contents of the `<script>`  element (but not the `<script>` element itself) to your newly created script file. Afterwards, you can remove the `<script>` element. Now link to the script file in the HTML file by writing (inside the `<head>` element):
@@ -71,7 +71,7 @@ console.log(paragraph);
 ```
 And if you refresh the page you will see that the`<p>` element is already printed out in the console. And if you try to write `paragraph` it will be undefined, which it should be.
 
-#### Changing properties of elements
+### Changing properties of elements
 Now that we know how to execute JavaScript we can start having some real fun!
 
 **Task**
@@ -79,7 +79,7 @@ Write a piece of JavaScript code that sets the text of the `<p>` element to your
 
 Relevant methods: *innerText, textContent*
 
-##### Event Listeners
+#### Event Listeners
 The thing about changing elements is that we can't seem to say exactly when we wan't it to happen. It just happens instantly, but what if we want it to happen after we have clicked on the element?
 
 Read MDN's [Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events) up until (and including) the *"A simple example"* section.
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", main);
 ```
 You can tell that an event listener is also used here. The `onclick` we used earlier was attached to the paragraph, but on this line we are adding an event listener to the entire document. And what event are we listening for? In our paragraph we were listening for a click but here, we are listening for a "DOMContentLoaded" which is basically a signal that is sent out when the document structure has been properly loaded. So what this line does is that it runs the main function only *after* all the elements in the HTML document has been loaded so that we can make sure that when we use `getElementById` we can find the elements we're looking for.
 
-#### More fun
+### More fun
 If you've made it this far, you are well on your way to becoming the all-knowing JavaScript Guru you've always dreamt of being. Time for the final task!
 
 **Task 3**
