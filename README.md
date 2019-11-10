@@ -9,7 +9,7 @@ Start out by opening the document in your browser and also opening the your brow
 
 The tabs we are focusing on first is "Elements" and "Console". *Elements*  show us the current structure of our HTML document. *Console* allows us to dynamically write JavaScript which will be applied to the document. Head over to the *Console* tab and write the following:
 ```javascript
-var paragraph = document.getElementById("my-paragraph");
+let paragraph = document.getElementById("my-paragraph");
 ```
 press Enter and then write:
 ```javascript
@@ -23,7 +23,7 @@ Of course, we don't want to write the JavaScript manually every time we load a p
 Head over to the sample_page.html (open it in your editor/IDE) and write a `<script>` element inside the `<body>` element *at the end*. And inside the `<script>` write the code we wrote in the console before:
 
 ```javascript
-var paragraph = document.getElementById("my-paragraph");
+let paragraph = document.getElementById("my-paragraph");
 ```
 If you now refresh the page in the browser and write `paragraph;` in the console you will see that the variable is defined, even when you reload the page. That means the JavaScript that is written in the HTML is run every time we load the document.
 
@@ -46,12 +46,12 @@ If you made a good guess at Question I you should be able to figure out what hap
 The solution to this problem is to:
 **1:** Wrap your code in a function, so:
 ```javascript
-var paragraph = document.getElementById("my-paragraph");
+let paragraph = document.getElementById("my-paragraph");
 ```
 becomes
 ```javascript
 function main() {
-    var paragraph = document.getElementById("my-paragraph");
+    let paragraph = document.getElementById("my-paragraph");
 }
 ```
 **2:** Add the following line below:
