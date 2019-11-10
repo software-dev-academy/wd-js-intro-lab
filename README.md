@@ -1,9 +1,9 @@
 # Web Development – Javascript intro lab
 
-In this workshop you will get started with the basics of JavaScript. At your disposal is an HTML file [`sample_page.html`](sample_page.html) which will be the document we will be working on throughout. It contains the boilerplate HTML elements, a `div` and a `p` element with some text. 
+In this lab you will learn basic usage of the HTML DOM API with JavasScript. At your disposal is an HTML file [`sample_page.html`](sample_page.html) which will be the document we will be working on throughout the lab. It contains the boilerplate HTML elements, a `div` and a `p` element with some text. 
 
 ### Interactive JavaScript
-Start out by opening the document in your browser and also opening the your browser's *Developer Tools*. In most browsers this can be done by pressing `Shift` +`Ctrl` + `I` (Windows/Linux) or `Cmd` + `Shift` + `C` (Mac). If it doesn't work, check [this page](https://debugbrowser.com), it has instructions for the most common browsers. If you've done it correctly you should see something like this (this is Chrome's dev. tool, it might look a bit different on other browsers):
+Start out by opening the document in your browser and also opening your browser's *Developer Tools*. In most browsers this can be done by pressing `Shift` +`Ctrl` + `I` (Windows/Linux) or `Cmd` + `Shift` + `C` (Mac). If it doesn't work, check [this page](https://debugbrowser.com), it has instructions for the most common browsers. If you've done it correctly you should see something like this (this is Chrome's dev. tool, it might look a bit different on other browsers):
 
 <img src="images/dev-tools-chrome.png">
 
@@ -11,10 +11,13 @@ The tabs we are focusing on first is "Elements" and "Console". *Elements*  show 
 ```javascript
 let paragraph = document.getElementById("my-paragraph");
 ```
-press Enter and then write:
+Press Enter and then write:
 ```javascript
 paragraph;
 ```
+And press Enter
+
+
 You should now see that the variable *paragraph* contains our paragraph element. Congratulations, you just successfully wrote some JavaScript! But, if you reload the page and write `paragraph;` again you will see that the variable is no longer is defined.
 
 ### JavaScript in HTML
@@ -80,6 +83,7 @@ And if you refresh the page you will see that the`<p>` element is already printe
 Now that we know how to execute JavaScript we can start having some real fun!
 
 **Task**
+
 Write a piece of JavaScript code that sets the text of the `<p>` element to your favourite quote instead of the random text.
 
 Relevant methods: *innerText, textContent*
