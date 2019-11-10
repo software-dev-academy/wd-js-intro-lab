@@ -95,7 +95,7 @@ Read MDN's [Introduction to events](https://developer.mozilla.org/en-US/docs/Lea
 
 If you look through their example, the important thing to learn is that the `onclick` property should be set to a function which is the function that will be run when the user clicks the element. Which you can see in their example: `btn.onclick = function () {...`
 
-It might seem a bit complicated. The reason for that is their way of setting the `onclick` property. They set to a function which they also define on the same line. What we can do instead is define a function on some previous line, give it a variable name and then just use the variable name instead when we set the `onclick` property: `btn.onclick = varName;`
+It might seem a bit complicated. The reason for that is their way of setting the `onclick` property. They set to a function which they also define on the same line. What we can do instead is define a function on some previous line and then just use the function's name instead when we set the `onclick` property: `btn.onclick = funcName;`
 
 **Task 2**
 
