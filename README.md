@@ -1,8 +1,12 @@
 # Web Development – Javascript intro lab
 
-In this lab you will learn basic usage of the HTML DOM API with JavasScript. At your disposal is an HTML file [`sample_page.html`](sample_page.html) which will be the document we will be working on throughout the lab. It contains the boilerplate HTML elements, a `div` and a `p` element with some text. 
-
-### Interactive JavaScript
+In this lab you will learn basic usage of the HTML DOM API with JavasScript. It's recommended to have a short look
+ at the following links (unless you already have):
+ - [JavScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+ - [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+ 
+### Interactive JavaScriptct
+At your disposal is an HTML file [`sample_page.html`](sample_page.html) which will be the document we will be working on throughout the lab.
 Start out by opening the document in your browser and also opening your browser's *Developer Tools*. In most browsers this can be done by pressing `Shift` +`Ctrl` + `I` (Windows/Linux) or `Cmd` + `Shift` + `C` (Mac). If it doesn't work, check [this page](https://debugbrowser.com), it has instructions for the most common browsers. If you've done it correctly you should see something like this (this is Chrome's dev. tool, it might look a bit different on other browsers):
 
 <img src="images/dev-tools-chrome.png">
