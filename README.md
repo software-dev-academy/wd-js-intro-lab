@@ -1,4 +1,4 @@
-# Web Development – Javascript mini-lab
+# Web Development – Javascript intro lab
 
 In this workshop you will get started with the basics of JavaScript. At your disposal is an HTML file [`sample_page.html`](sample_page.html) which will be the document we will be working on throughout. It contains the boilerplate HTML elements, a `div` and a `p` element with some text. 
 
@@ -117,4 +117,4 @@ Add three buttons in the HTML:
 The only thing you should add in the HTML file is the button elements. The rest of the behaviour should be added in your
 JavaScript file.
 
-Some relevant methods: *innerHTML, insertAdjacentHTML*
+Some relevant methods: *innerHTML, insertAdjacentHTML, createElement*
