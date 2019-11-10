@@ -121,4 +121,4 @@ In your HTML file, add three buttons:
 The only thing you should add in the HTML file is the button elements. The rest of the behaviour should be added in your
 JavaScript file. You are of course allowed to add a css file with styling rules for different classes, ids etc. 
 
-Some relevant methods: *innerHTML, insertAdjacentHTML, createElement*
+Some relevant methods: *innerHTML, insertAdjacentHTML, createElement, appendChild*
