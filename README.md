@@ -88,7 +88,7 @@ Write a piece of JavaScript code that sets the text of the `<p>` element to your
 
 Relevant methods: *innerText, textContent*
 
-#### Event Listeners
+### Event Listeners
 The thing about changing elements is that we can't seem to say exactly when we wan't it to happen. It just happens instantly, but what if we want it to happen after we have clicked on the element?
 
 Read MDN's [Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events) up until (and including) the *"A simple example"* section.
