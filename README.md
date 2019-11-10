@@ -44,16 +44,21 @@ And if we go back to the browser, refresh the page and write `paragraph;` in the
 If you made a good guess at Question I you should be able to figure out what happened here as well. That's right – the script is executed before the `<p>` element is loaded so it cannot find the element and therefore, `getElementById` returns null.
 
 The solution to this problem is to:
+
 **1:** Wrap your code in a function, so:
+
 ```javascript
 let paragraph = document.getElementById("my-paragraph");
 ```
+
 becomes
+
 ```javascript
 function main() {
     let paragraph = document.getElementById("my-paragraph");
 }
 ```
+
 **2:** Add the following line below:
 ```
 document.addEventListener("DOMContentLoaded", main);
@@ -103,9 +108,13 @@ You can tell that an event listener is also used here. The `onclick` we used ear
 If you've made it this far, you are well on your way to becoming the all-knowing JavaScript Guru you've always dreamt of being. Time for the final task!
 
 **Task 3**
-Add three buttons in the html:
+
+Add three buttons in the HTML:
 - One button with the text "remove" which, when clicked, should remove the paragraph.
 - One button with the text "add" which, when clicked, adds a paragraph with a custom text.
 - One button with the text "makeUgly" which, when clicked, adds some random paragraphs (preferably out of order and in different sizes), changes the colour of the paragraphs, the div and the body in a way that really hurts the eyes. Bonus points if you randomly add horribly pixelated images and flashing colours. Use inspiration from wherever you can, for example [this lovely eyesore](http://thebiguglywebsite.com/). The uglier you make the site, the better!
 
-Some elevant methods: *innerHTML, insertAdjacentHTML*
+The only thing you should add in the HTML file is the button elements. The rest of the behaviour should be done in your
+JavaScript file.
+
+Some relevant methods: *innerHTML, insertAdjacentHTML*
