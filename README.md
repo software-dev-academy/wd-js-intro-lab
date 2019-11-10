@@ -9,7 +9,7 @@ Start out by opening the document in your browser and also opening your browser'
 
 The tabs we are focusing on first is "Elements" and "Console". *Elements*  show us the current structure of our HTML document. *Console* allows us to dynamically write JavaScript which will be applied to the document. Head over to the *Console* tab and write the following:
 ```javascript
-let paragraph = document.getElementById("my-paragraph");
+let paragraph = document.querySelector("#my-paragraph");
 ```
 Press Enter and then write:
 ```javascript
@@ -26,7 +26,7 @@ Of course, we don't want to write the JavaScript manually every time we load a p
 Head over to the sample_page.html (open it in your editor/IDE) and write a `<script>` element inside the `<body>` element *at the end*. And inside the `<script>` write the code we wrote in the console before:
 
 ```javascript
-let paragraph = document.getElementById("my-paragraph");
+let paragraph = document.querySelector("#my-paragraph");
 ```
 If you now refresh the page in the browser and write `paragraph;` in the console you will see that the variable is defined, even when you reload the page. That means the JavaScript that is written in the HTML is run every time we load the document.
 
@@ -44,21 +44,21 @@ And if we go back to the browser, refresh the page and write `paragraph;` in the
 
 ...null
 
-If you made a good guess at Question I you should be able to figure out what happened here as well. That's right – the script is executed before the `<p>` element is loaded so it cannot find the element and therefore, `getElementById` returns null.
+If you made a good guess at Question I you should be able to figure out what happened here as well. That's right – the script is executed before the `<p>` element is loaded so it cannot find the element and therefore, `querySelector` returns null.
 
 The solution to this problem is to:
 
 **1:** Wrap your code in a function, so:
 
 ```javascript
-let paragraph = document.getElementById("my-paragraph");
+let paragraph = document.querySelector("#my-paragraph");
 ```
 
 becomes
 
 ```javascript
 function main() {
-    let paragraph = document.getElementById("my-paragraph");
+    let paragraph = document.querySelector("#my-paragraph");
 }
 ```
 
@@ -106,7 +106,7 @@ If you've done the above successfully you should now see that the text changes o
 ```javascript
 document.addEventListener("DOMContentLoaded", main);
 ```
-You can tell that an event listener is also used here. The `onclick` we used earlier was attached to the paragraph, but on this line we are adding an event listener to the entire document. And what event are we listening for? In our paragraph we were listening for a click but here, we are listening for a "DOMContentLoaded" which is basically a signal that is sent out when the document structure has been properly loaded. So what this line does is that it runs the main function only *after* all the elements in the HTML document has been loaded so that we can make sure that when we use `getElementById` we can find the elements we're looking for.
+You can tell that an event listener is also used here. The `onclick` we used earlier was attached to the paragraph, but on this line we are adding an event listener to the entire document. And what event are we listening for? In our paragraph we were listening for a click but here, we are listening for a "DOMContentLoaded" which is basically a signal that is sent out when the document structure has been properly loaded. So what this line does is that it runs the main function only *after* all the elements in the HTML document has been loaded so that we can make sure that when we use `querySelector` we can find the elements we're looking for.
 
 ### More fun
 If you've made it this far, you are well on your way to becoming the all-knowing JavaScript Guru you've always dreamt of being. Time for the final task!
