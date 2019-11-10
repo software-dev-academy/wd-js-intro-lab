@@ -114,7 +114,7 @@ Add three buttons in the HTML:
 - One button with the text "add" which, when clicked, adds a paragraph with a custom text.
 - One button with the text "makeUgly" which, when clicked, adds some random paragraphs (preferably out of order and in different sizes), changes the colour of the paragraphs, the div and the body in a way that really hurts the eyes. Bonus points if you randomly add horribly pixelated images and flashing colours. Use inspiration from wherever you can, for example [this lovely eyesore](http://thebiguglywebsite.com/). The uglier you make the site, the better!
 
-The only thing you should add in the HTML file is the button elements. The rest of the behaviour should be done in your
+The only thing you should add in the HTML file is the button elements. The rest of the behaviour should be added in your
 JavaScript file.
 
 Some relevant methods: *innerHTML, insertAdjacentHTML*
