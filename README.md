@@ -116,7 +116,7 @@ If you've made it this far, you are well on your way to becoming the all-knowing
 In your HTML file, add three buttons:
 - One button with the text "remove" which, when clicked, should remove the paragraph.
 - One button with the text "add" which, when clicked, adds a paragraph with a custom text.
-- One button with the text "makeUgly" which, when clicked, adds some random paragraphs (preferably out of order and in different sizes), changes the colour of the paragraphs, the div and the body in a way that really hurts the eyes. Bonus points if you randomly add horribly pixelated images and flashing colours. Use inspiration from wherever you can, for example [this lovely eyesore](http://thebiguglywebsite.com/). The uglier you make the site, the better!
+- One button with the text "make ugly" which, when clicked, adds some random paragraphs (preferably out of order and in different sizes), changes the colour of the paragraphs, the div and the body in a way that really hurts the eyes. Bonus points if you randomly add horribly pixelated images and flashing colours. Use inspiration from wherever you can, for example [this lovely eyesore](http://thebiguglywebsite.com/). The uglier you make the site, the better!
 
 The only thing you should add in the HTML file is the button elements. The rest of the behaviour should be added in your
 JavaScript file. You are of course allowed to add a css file with styling rules for different classes, ids etc. 
