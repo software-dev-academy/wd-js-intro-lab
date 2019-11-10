@@ -100,7 +100,7 @@ It might seem a bit complicated. The reason for that is their way of setting the
 **Task 2**
 
 1. Start by moving your code that sets the text of the `<p>` element to it's own function.
-1. Now in the main function, you should have code that gets the paragraph element and sets its `onclick` property to the name of the function you created in the previous step.
+1. Now in the main function, you should write code that gets the paragraph element and sets its `onclick` property to the name of the function you created in the previous step.
 
 If you've done the above successfully you should now see that the text changes only when you've clicked it. Congratulations, you've successfully used an event listener. But this is not the first time, if you look at this line again:
 ```javascript
@@ -113,7 +113,7 @@ If you've made it this far, you are well on your way to becoming the all-knowing
 
 **Task 3**
 
-Add three buttons in the HTML:
+In your HTML file, add three buttons:
 - One button with the text "remove" which, when clicked, should remove the paragraph.
 - One button with the text "add" which, when clicked, adds a paragraph with a custom text.
 - One button with the text "makeUgly" which, when clicked, adds some random paragraphs (preferably out of order and in different sizes), changes the colour of the paragraphs, the div and the body in a way that really hurts the eyes. Bonus points if you randomly add horribly pixelated images and flashing colours. Use inspiration from wherever you can, for example [this lovely eyesore](http://thebiguglywebsite.com/). The uglier you make the site, the better!
