@@ -90,7 +90,7 @@ Now that we know how to execute JavaScript we can start having some real fun!
 
 Write a piece of JavaScript code that sets the text of the `<p>` element to your favourite quote instead of the random text.
 
-Relevant methods: *innerText, textContent*
+Relevant methods/properties: *innerText, textContent*
 
 ### Event Listeners
 The thing about changing elements is that we can't seem to say exactly when we wan't it to happen. It just happens instantly, but what if we want it to happen after we have clicked on the element?
@@ -125,4 +125,4 @@ In your HTML file, add three buttons:
 The only thing you should add in the HTML file is the button elements. The rest of the behaviour should be added in your
 JavaScript file. You are of course allowed to add a css file with styling rules for different classes, ids etc. 
 
-Some relevant methods: *innerHTML, insertAdjacentHTML, createElement, appendChild*
+Some relevant methods/properties: *innerHTML, insertAdjacentHTML, createElement, appendChild*
